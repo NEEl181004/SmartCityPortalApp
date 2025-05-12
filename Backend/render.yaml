@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: flutter-login-backend
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: python server.py
+    envVars:
+      - key: DB_HOST
+        value: dpg-d016dlvgi27c73a184dg-a
+      - key: DB_NAME
+        value: project_xuiv
+      - key: DB_USER
+        value: project_xuiv_user
+      - key: DB_PASSWORD
+        value: s4gOVoZe0qEP2XvkUctR4zTymOTUDYb1
+      - key: DB_PORT
+        value: 5432
